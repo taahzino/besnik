@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+
+    color: #fff;
+    font-size: 1rem;
+    padding: 7px 15px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.button__primary {
+    @extend .button;
+
+    background-color: $primaryColor;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.button__transparent {
+    @extend .button;
+
+    color: $primaryColor;
+
+    &:hover {
+        color: $primaryColor;
+    }
+}
