@@ -25,6 +25,19 @@
     }
 }
 
+.button__secondary {
+    @extend .button;
+    font-size: 13px;
+    padding: 14px 24px;
+
+    color: $primaryColor;
+    background-color: #fff;
+
+    &:hover {
+        color: $primaryColor;
+    }
+}
+
 .button__transparent {
     @extend .button;
 
